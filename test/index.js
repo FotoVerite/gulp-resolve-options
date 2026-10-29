@@ -21,7 +21,7 @@ describe("createResolver", function () {
   it("returns a resolver that contains a `resolveConstant` method", function () {
     var resolver = createResolver();
 
-   assert.strictEqual(typeof resolver.resolveConstant, "function");
+    assert.strictEqual(typeof resolver.resolveConstant, "function");
   });
 
   it("accepts a config object", function () {
