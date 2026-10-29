@@ -15,13 +15,13 @@ describe("createResolver", function () {
   it("returns a resolver that contains a `resolve` method", function () {
     var resolver = createResolver();
 
-    assert.strictEqual(typeof resolver.resolve == "function", true);
+    assert.strictEqual(typeof resolver.resolve, "function");
   });
 
   it("returns a resolver that contains a `resolveConstant` method", function () {
     var resolver = createResolver();
 
-    assert.strictEqual(typeof resolver.resolveConstant == "function", true);
+   assert.strictEqual(typeof resolver.resolveConstant, "function");
   });
 
   it("accepts a config object", function () {
