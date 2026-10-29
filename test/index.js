@@ -139,7 +139,7 @@ describe("resolver.resolve", function () {
 
     var invalidResolver = createResolver(config, invalidOptions);
 
-    var invalidOpt = invalidResolver.resolve("myOpt");
+    var invalidOpt = invalidResolver.resolveConstant("myOpt");
 
     assert.strictEqual(invalidOpt, "hello world");
   });
